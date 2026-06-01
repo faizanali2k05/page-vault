@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "PageVault",
+  "version": "1.2.0",
+  "description": "Capture loaded page files and generate a local UI clone kit for rebuilding layouts.",
+  "permissions": ["debugger", "downloads", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PageVault - capture page files",
+    "default_icon": {
+      "16": "icon128.png",
+      "32": "icon128.png",
+      "48": "icon128.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon128.png",
+    "32": "icon128.png",
+    "48": "icon128.png",
+    "128": "icon128.png"
+  }
+}
