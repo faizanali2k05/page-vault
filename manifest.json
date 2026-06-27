@@ -1,16 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "PageVault",
-  "version": "1.2.0",
-  "description": "Capture loaded page files and generate a local UI clone kit for rebuilding layouts.",
-  "permissions": ["debugger", "downloads", "storage", "tabs"],
+  "name": "UXRay",
+  "version": "2.0.0",
+  "description": "X-ray any website's UI/UX into a detailed Markdown report — colors, typography, spacing, components, layout, and accessibility.",
+  "permissions": ["scripting", "downloads", "activeTab", "tabs"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "PageVault - capture page files",
+    "default_title": "UXRay - analyze page UI/UX",
     "default_icon": {
       "16": "icon128.png",
       "32": "icon128.png",
